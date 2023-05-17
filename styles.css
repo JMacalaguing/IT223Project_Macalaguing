@@ -1,0 +1,510 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif
+    box-sizing: border-box;
+    
+}
+.navbar{
+position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+a{
+    position: sticky;
+    text-decoration: none;
+    box-shadow: 0 2px 15px rgba(130, 207, 41, 0.26);
+    color: #fff;
+    padding: 20px; 
+}
+
+
+a:hover{
+    color: rgb(22, 3, 3);
+    background-color: red;
+    transition: all 1s linear
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff
+}
+
+html::-webkit-scrollbar-track{
+    background: black
+}
+
+.heading{
+    font-size: 1.9rem;
+    margin-left: 5rem;
+    color:black;
+    border-left: 7px solid red;
+    padding-left: 8px;
+}
+
+.btn{
+    background-color: red;
+    font-size: 19px;
+    float:right;
+    margin: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    background: linear-gradient(#a50e1b, #b9142a);
+    box-shadow: 0 2px 15px rgba(130, 207, 41, 0.26);
+    color: #fff;
+}
+
+.btn:hover{
+    transform: scaleX(1.15);
+}
+
+
+
+header{
+    margin: 1.4rem 7%;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .logo h1{
+    border: 5px solid red;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+header .container nav{
+    margin-left: 25rem;
+}
+
+header .container nav a{
+    margin: 0 12px;
+    font-size: 19px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    color: #fff;
+}
+
+header .container nav a:hover{
+    border-bottom: 5px solid red;
+    padding-bottom: 6px;
+}
+
+
+.home{
+    background-image: url(images3.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 49rem;
+    margin-top: -6.3rem;
+}
+
+.home .container{
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.home .container .content{
+    flex: 1 1 45rem;
+    margin-left: 7rem;
+    margin-top: 5rem;
+}
+
+.home .container .content h1{
+    font-size: 4.5rem;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.home .container .content h2{
+    color: red;
+    font-size: 2.4rem;
+    margin-bottom: 2.2rem;
+}
+
+.home .container .content p{
+    color: #eee;
+    line-height: 1.8;
+    margin-bottom: 2.3rem;
+    font-size: 1.1rem;
+}
+
+.home .container .content .btn{
+    padding: 9px 25px;
+}
+
+.home .container .image{
+    flex: 1 1 25rem;
+    margin-top: 8rem;
+}
+
+.home .container .image img{
+    border: 8px solid red;
+    margin-left: 100px;
+    border-radius: 50%;
+    width: 80%;
+    height: 500px;
+}
+
+.about{
+    position: relative;
+    margin: 10px 0 5px;
+}
+
+.about .heading1{
+    position: absolute;
+    margin-left: 5rem;
+    top: 2.5rem;
+}
+
+.about .heading1 h1{
+    color: #fff;
+    font-size: 2.8rem;
+    border-left: 7px solid red;
+    padding-left: 1rem;
+}
+
+.about .container .image img{
+    width: 100%;
+    height: 45rem;
+}
+
+.about .container .content{
+    position: absolute;
+    top: 6rem;
+    left: 48rem;
+    color: #fff;
+    margin-right: 5rem;
+}
+
+
+.about .container .content h1{
+    color: red;
+    font-size: 2.5rem;
+}
+
+
+.about .container .content h2{
+    margin: 12px 0 2.5rem;
+    font-size: 1.7rem;
+    background-color: #ffffffc2;
+    color: #000;
+    padding: 5px 18px;
+    width: 27rem;
+    border-radius: 8px;
+}
+
+.about .container .content p{
+    line-height: 2;
+}
+
+.about .container .content .p{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.about .container .content .btn{
+    padding: 10px 28px;
+}
+
+.about .container .content .btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+.products{
+    background-color: #000;
+    padding: 2rem 0 3rem;
+}
+
+.products .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+
+}
+
+.products .container .box{
+    margin: 0 8px;
+}
+
+.products .container .box .image img{
+    width: 23rem;
+    border: 5px solid red;
+}
+
+.products .container .box .image .center-img{
+    height: 37rem;
+    width: 30rem;
+    border: 5px solid #fff;
+}
+
+.products .container .box h2{
+    color: #fff;
+    background-color: #000;
+    /* width: 10; */
+    position: absolute;
+    top: 5rem;
+    margin-left: 2rem;
+    padding: 4px 11px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+
+.products .container .box .tag{
+    background: red;
+    color: #fff;
+    top: 2.2rem;
+    font-size: 1.6rem;
+}
+
+.services{
+    background-color: #111;
+    padding: 2rem 0;
+    margin: 10px 0;
+}
+
+.services .container{
+    display: flex;
+    padding: 3rem 10rem;
+}
+
+.services .container .image{
+    flex: 1 1 45rem;
+}
+
+.services .container .content{
+    flex: 1 1 40rem;
+    background-color: red;
+    padding: 3rem 2rem;
+}
+
+.services .container .content h1{
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.services .container .content h2{
+    background-color: #000;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 10px 15px;
+    width: 25rem;
+    border-radius: 8px;
+}
+
+.services .container .content p{
+    line-height: 1.8;
+    color: #eee;
+    margin-top: 12px;
+}
+
+.services .container .content .p{
+    margin-top: 10px;
+    margin-bottom: 2rem;
+}
+
+.services .container .image img{
+    width: 33rem;
+    height: 30rem;
+    border: 5px solid #fff;
+}
+
+.services .container .content .btn{
+    background-color: #000;
+    padding: 8px 22px;
+}
+
+.contact{
+    background-image: url();
+    height: 25rem;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contact .box{
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.contact .box h1{
+    font-size: 4rem;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.contact .box p{
+    color: #fff;
+    margin: 0 20rem;
+    line-height: 1.8;
+}
+
+.contact .email{
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contact .email .email-1{
+    width: 40rem;
+    height: 3.7rem;
+    padding-left: 1rem;
+    font-size: 1.1rem;
+    border-radius: 2rem;
+    border: 2px solid;
+}
+
+.contact .email .submit{
+    height: 2.9rem;
+    width: 6.9rem;
+    border-radius: 2rem;
+    margin-left: -7.5rem;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.contact .email .submit:hover{
+    background-color: red;
+    color: #fff;
+}
+
+footer{
+
+    background-color: #000;
+}
+
+footer .container{
+    display: flex;
+    justify-content: center;
+    padding: 5rem 8% 0;
+}
+
+footer .container .box{
+    /* background-color: red; */
+    width: 20rem;
+    margin: 0 1rem;
+}
+
+footer .container .box a{
+    display: block;
+    line-height: 2.3;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    padding-left: 5px;
+    color: #999;
+}
+
+footer .container .box a:hover{
+    text-decoration: underline red 2px;
+    padding-bottom: 2px;
+}
+
+footer .container .box h2{
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+footer .container .box .icons{
+    display: flex;
+    margin-top: 2rem;
+}
+
+footer .container .box .icons a{
+    margin: 0 10px;
+    border: 2px solid #fff;
+    padding: 1px 14px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    color: #fff;
+}
+
+footer .container .box .icons a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: red;
+}
+
+footer .container .box h1{
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+footer .container .box p{
+    line-height: 1.6;
+    color: #888;
+}
+
+footer .container .box .email{
+    margin-top: 2rem;
+}
+
+footer .container .box .email .email-1{
+    background: transparent;
+    height: 2.5rem;
+    width: 15rem;
+    margin-bottom: 1rem;
+    padding-left: 12px;
+    font-size: 1rem;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+footer .container .box .submit{
+    background-color: red;
+    padding: 6px 18px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid red;
+}
+
+footer .container .box .submit:hover{
+    background-color: #000;
+    border: 2px solid #fff;
+}
+
+footer .container .box h5{
+    color: #999;
+    font-size: 1rem;
+}
+
+footer .credit{
+    color: #fff;
+    text-align: center;
+    margin-top: 4rem;
+    border-top: 1px solid #999;
+    padding: 1rem 0;
+}
+
+footer .credit p{
+    font-size: 1.1rem;
+}
+
+footer .credit span{
+    color: red;
+    font-size: 1.2rem;
+}
+
+
+
