@@ -19,7 +19,7 @@ body {
 }
 
 .navbar>.container {
-    margin-left: 0;
+    margin-right: 200px;
     padding: 0px;
 }
 
@@ -360,32 +360,37 @@ footer {
     display: block;
   }
 
-  #carouselSection {
-    padding: 40px 0;
-  }
-  
-  .carousel {
+  .carousel-container {
+    position: relative;
     width: 100%;
-    margin-bottom: 40px;
+    overflow: hidden;
   }
   
-  .carousel-item {
-    height: 300px;
+  .carousel-slide {
+    display: flex;
+    width: 300%; 
+    transition: transform 0.3s ease-in-out;
   }
   
-  .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .carousel-slide img {
+    width: 33.3%;
+  }
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .carousel-prev {
+    left: 0;
   }
   
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 5%;
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: #000;
-    padding: 10px;
+  .carousel-next {
+    right: 0;
   }
