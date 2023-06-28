@@ -8,17 +8,24 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>MacBike</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container">
-      <a class="navbar-brand" id="uni" href="#"><img id="logo" src="img/png.png" alt="logo"></a>
+      <a class="navbar-brand" id="uni2" href="#"><img id="logo" src="img/png.png" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction()">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse justify-content-end"></div>
+      <div class="form collapse navbar-collapse justify-content-end">
+        Discover the Freedom of MacBike
+      </div>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -31,7 +38,7 @@
             <a class="nav-link" href="#shop">Shop</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#AboutUs">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -40,16 +47,7 @@
             <a class="nav-link" href="service.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Log In</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href=""><img src="img/trolly-icon.png" alt=""></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href=""><img src="img/search-icon.png" alt=""></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href=""><img src="img/toggle-icon.png" alt=""></a>
+            <a class="nav-link" href="login.html"  id="log"><span id="login">Log In</span></a>
           </li>
         </ul>
       </div>
@@ -80,8 +78,7 @@
                                 <i class="fa fa-wrench" aria-hidden="true"></i>
                             </div>
                             <h4>Repair</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus aliquid perferendis
-                                inventore fugit magnam quod atque dicta nemo. </p>
+                            <p>Our experienced team of highly skilled technicians specializes in providing top-notch bike repair and meticulous maintenance services. From minor adjustments to complete overhauls, we have the expertise ensuring durability, and reliability for your exhilarating cycling.</p>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -90,8 +87,7 @@
                                 <i class="fa fa-clock-o" aria-hidden="true"></i>
                             </div>
                             <h4>Speed</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus aliquid perferendis
-                                inventore fugit magnam quod atque dicta nemo. </p>
+                            <p>At MacBike, we understand the need for speed. Our services are designed to enhance your bike's performance, helping you reach your maximum speed potential. Whether it's optimizing gear ratios, fine-tuning components, or recommending aerodynamic upgrades.</p>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -100,8 +96,7 @@
                                 <i class="fa fa-cog" aria-hidden="true"></i>
                             </div>
                             <h4>Spare Parts</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus aliquid perferendis
-                                inventore fugit magnam quod atque dicta nemo. </p>
+                            <p>We believe that using high-quality parts is crucial for the longevity and performance of your bike. That's why we offer a wide selection of square parts from reputable brands. Whether you need a new crankset, bottom bracket, or headset, we have you covered with durable.</p>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -110,8 +105,7 @@
                                 <i class="fa fa-balance-scale" aria-hidden="true"></i>
                             </div>
                             <h4>Tire Sales</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus aliquid perferendis
-                                inventore fugit magnam quod atque dicta nemo. </p>
+                            <p>Your bike's tires are essential for grip, comfort, and overall ride quality. We provide a range of premium tires for various terrains and cycling disciplines. Our knowledgeable staff can assist you in selecting the right tires for your needs and provide professional installation</p>
                         </div>
                     </div>
                 </div>
@@ -126,133 +120,322 @@
                     <div class="col-md-3">
                         <div class="item-box">
                             <div class="item-box-img">
-                                <img src="./img/bike1.jpg">
+                                <img src="newly/new.jpg">
                             </div>
                             <div class="item-box-head">Bikes</div>
-                            <div class="item-box-sub-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                            <button class="btn item-box-btn">Shop Now</button>
+                            <div class="item-box-sub-text">Experience the thrill of cycling with our exceptional range of bikes.</div>
+                            <button class="btn item-box-btn" onclick="window.location.href = 'bikes.html';">Shop Now</button>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="item-box">
                             <div class="item-box-img">
-                                <img src="./img/bike.jpg">
+                                <img src="helmets/helmets.jpg">
                             </div>
                             <div class="item-box-head">Helmets</div>
-                            <div class="item-box-sub-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                            <button class="btn item-box-btn">Shop Now</button>
+                            <div class="item-box-sub-text">Discover a wide selection of protective and stylish helmets.</div>
+                            <button class="btn item-box-btn" onclick="window.location.href = 'helmets.html';">Shop Now</button>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="item-box">
                             <div class="item-box-img">
-                                <img src="./img/bike2.jpg">
+                                <img src="helmets/Wheels.jpg">
                             </div>
                             <div class="item-box-head">Wheels</div>
-                            <div class="item-box-sub-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                            <button class="btn item-box-btn">Shop Now</button>
+                            <div class="item-box-sub-text">Explore a range of durable and high-performance wheels.</div>
+                            <button class="btn item-box-btn" onclick="window.location.href = 'wheels.html';">Shop Now</button>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="item-box">
                             <div class="item-box-img">
-                                <img src="./img/bike3.jpg">
+                                <img src="helmets/clothes.jpg">
                             </div>
                             <div class="item-box-head">Cloths</div>
-                            <div class="item-box-sub-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                            <button class="btn item-box-btn">Shop Now</button>
+                            <div class="item-box-sub-text">Discover a collection of functional and stylish bike clothing</div>
+                            <button class="btn item-box-btn" onclick="window.location.href = 'cloths.html';">Shop Now</button>
                         </div>
                     </div>
                 </div>
                 <div class="sectionSubHead">Newly Arrived</div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="myBtn">
                         <div class="card">
-                            <img class="card-img-top" src="./img/bike.jpg" alt="bike">
+                            <img class="card-img-top" src="newly/new14.jpg" alt="bike">
                             <div class="card-footer">
                                 <p class="card-text">
-                                    INR XX,XXX/-
-                                    <span style="color:rgb(173, 11, 11)">(39% off)</span>
+                                    Honda XL750 Transalp 
+                                    <span style="color:rgb(173, 11, 11)">(New)</span>
+                                    $3000
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="myBtn">
                         <div class="card">
-                            <img class="card-img-top" src="./img/bike2.jpg" alt="bike">
+                            <img class="card-img-top" src="newly/new16.jpg" alt="bike">
                             <div class="card-footer">
                                 <p class="card-text">
-                                    INR XX,XXX/-
-                                    <span style="color:rgb(173, 11, 11)">(27% off)</span>
+                                    Honda Rebel 1100
+                                    <span style="color:rgb(173, 11, 11)">(New)</span>
+                                    $2000
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="myBtn">
                         <div class="card">
-                            <img class="card-img-top" src="./img/bike1.jpg" alt="bike">
+                            <img class="card-img-top" src="newly/new4.jpg" alt="bike">
                             <div class="card-footer">
                                 <p class="card-text">
-                                    INR XX,XXX/-
-                                    <span style="color:rgb(173, 11, 11)">(32% off)</span>
+                                    Honda CL500
+                                    <span style="color:rgb(173, 11, 11)">(New)</span>
+                                    $3500
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="myBtn">
                         <div class="card">
-                            <img class="card-img-top" src="./img/bike2.jpg" alt="bike">
+                            <img class="card-img-top" src="newly/new5.jpg" alt="bike">
                             <div class="card-footer">
                                 <p class="card-text">
-                                    INR XX,XXX/-
-                                    <span style="color:rgb(173, 11, 11)">(45% off)</span>
+                                    Vespa Primavera
+                                    <span style="color:rgb(173, 11, 11)">(New)</span>
+                                    $3200
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="myBtn">
                         <div class="card">
-                            <img class="card-img-top" src="./img/bike.jpg" alt="bike">
+                            <img class="card-img-top" src="newly/new6.jpg" alt="bike">
                             <div class="card-footer">
                                 <p class="card-text">
-                                    INR XX,XXX/-
-                                    <span style="color:rgb(173, 11, 11)">(17% off)</span>
+                                    Suzuki V-Strom 1050 DE
+                                    <span style="color:rgb(173, 11, 11)">(New)</span>
+                                    $1200
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="myBtn">
                         <div class="card">
-                            <img class="card-img-top" src="./img/bike3.jpg" alt="bike">
+                            <img class="card-img-top" src="newly/new7.jpg" alt="bike">
                             <div class="card-footer">
                                 <p class="card-text">
-                                    INR XX,XXX/-
-                                    <span style="color:rgb(173, 11, 11)">(21% off)</span>
+                                    Suzuki Burgman Street 125 EX
+                                    <span style="color:rgb(173, 11, 11)">(New)</span>
+                                    $2800
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" id="myBtn">
+                        <div class="card">
+                            <img class="card-img-top" src="newly/new17.jpg" alt="bike">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                    Kymco Like 125 Italia
+                                    <span style="color:rgb(173, 11, 11)">(New)</span>
+                                    $3600
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" id="myBtn">
+                        <div class="card">
+                            <img class="card-img-top" src="newly/new9.jpg" alt="bike">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                    Triumph Thruxton
+                                    <span style="color:rgb(173, 11, 11)">(New)</span>
+                                    $4000
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" id="myBtn">
+                        <div class="card">
+                            <img class="card-img-top" src="newly/new18.jpg" alt="bike">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                    Triumph Speed Triple
+                                    <span style="color:rgb(173, 11, 11)">(New)</span>
+                                    $2900
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" id="myBtn">
+                        <div class="card">
+                            <img class="card-img-top" src="newly/new11.jpg" alt="bike">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                    Kymco Like 150i
+                                    <span style="color:rgb(173, 11, 11)">(New)</span>
+                                    $3400
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" id="myBtn">
+                        <div class="card">
+                            <img class="card-img-top" src="newly/new12.jpg" alt="bike">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                    Triumph Tiger 800
+                                    <span style="color:rgb(173, 11, 11)">(New)</span>
+                                    $4000
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" id="myBtn">
+                        <div class="card">
+                            <img class="card-img-top" src="newly/new13.jpg" alt="bike">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                    Suzuki Avenis
+                                    <span style="color:rgb(173, 11, 11)">(New)</span>
+                                    $3800
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="parallex-section">
+                <!-- The First Modal -->
+        <div id="myModal3" class="modal3">
+            <!-- Modal content -->
+            <div class="modal-content3">
+            <form2 id="myForm">
+                <!-- Form fields -->
+                <h1 class="card-text">
+                <span id="brand"></span>
+                </h1>
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="address" placeholder="Address">
+                <input type="tel" name="Phone" placeholder="Phone">
+                <div class="hh5">Credit Number</div>
+                <input type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+                <div>Expiration Date</div>
+                <input type="date" name="date" placeholder="Expiration Date" id="DATE">
+                <div>CVV</div>
+                <input type="text" name="CVV" placeholder="CVV">
+                <button type="submit">Pay $<span id="price"></span></button>
+            </form2>
+            </div>
+        </div>
+
+        <!-- The Second Modal -->
+        <div id="modal2" class="modal">
+            <div class="modal-content2">
+            <h2 style="font-weight:bold;">Order has been Confirmed!</h2>
+            <h6>Your items will be carefully packed and shipped.</h6>
+            </div>
+        </div>
+        <div class="borders"></div>
+        <section class="parallex-section"id="AboutUs">
             <div class="parallex" id="parallex-set-3"></div>
         </section>
+            <div class="container1" id="AboutUs">
+                <div class="sectionHead">About Us</div>
+                <hr>
+                <p>
+                    MacBike is a premier cycling company dedicated to providing exceptional biking experiences and cutting-edge cycling solutions.
+                    At MacBike, we are dedicated to providing cyclists with exceptional biking experiences and cutting-edge cycling solutions. 
+                    As a leading provider in the industry, we are passionate about creating top-quality bicycles that blend style, performance, and innovation. 
+                    With MacBike by your side, you'll discover a whole new world of cycling possibilities.MacBike was founded with a vision to transform the way people experience cycling. 
+                    Since our establishment in [year], we have been on a relentless journey to bring together the best of both worlds: bicycles and technology. 
+                    Our team of cycling enthusiasts and industry experts came together to create a brand that offers superior bicycles that are both technologically advanced and visually appealing.
+               </p>
+               <p>
+                At MacBike, we take immense pride in our commitment to quality craftsmanship. 
+                Every MacBike is meticulously crafted with attention to detail, using premium materials and components. 
+                We believe that a bike should not only be durable but also provide an exceptional riding experience. 
+                Our experienced engineers and designers work tirelessly to ensure that each MacBike meets our stringent standards and exceeds the expectations of our customers.
+                Innovation is at the core of everything we do at MacBike. We continuously strive to push the boundaries of what's possible in cycling. 
+                By incorporating the latest advancements in technology, materials, and design, we create bikes that deliver optimal performance and unmatched comfort. 
+                From advanced frame geometries to cutting-edge components, each MacBike is designed to enhance your riding experience and take your cycling adventures to new heights.
+                At the heart of our business is a commitment to exceptional customer service. 
+                We strive to provide a seamless and personalized experience for every customer, from the moment you visit our website to long after you've made your purchase. 
+                Our knowledgeable and friendly team is always ready to assist you, answer your questions, and guide you towards making an informed decision. Your satisfaction and enjoyment are our top priorities.
+               </p>
+               <div id="aboutmore">
+                <button  class="button-40" role="button" >Read More</button>
+                <div class="content1">
+                    <hr>
+                    <div class="sectionHead">Our Product</div>
+                    <p>
+                        We offer a wide range of bicycles to suit various riding preferences and needs.
+                        Whether you're a dedicated road cyclist, an adventurous mountain biker, or a city commuter, 
+                        we have the perfect bike for you. Our product lineup includes cutting-edge road bikes, rugged mountain bikes, sleek urban commuters, 
+                        and versatile e-bikes that combine the best of electric and pedal power.
+                    </p>
+                    <div class="row1">
+                        <div class="column1" style="background-color:rgba(250, 246, 246, 0.933); color: black;">
+                            <div class="sectionHead">Mission</div>
+                            <p>
+                                At MacBike, our mission is to inspire and empower individuals to embrace the joy of cycling by providing innovative and high-quality bicycles.
+                                We strive to create exceptional biking experiences that enhance physical well-being, connect communities, and promote sustainability. 
+                                Through our dedication to craftsmanship, performance, and customer satisfaction, we aim to be the preferred choice for cyclists worldwide.
+                            </p>
+                        </div>
+                        <div class="column1" style="background-color:#ffffff; color:black;">
+                            <div class="sectionHead">Vission</div>
+                            <p>
+                                Our vision is to revolutionize the cycling industry by continuously pushing the boundaries of design, technology, and sustainability.
+                                We envision a world where cycling is celebrated as a transformative and accessible mode of transportation and recreation. 
+                                With a focus on innovation, environmental responsibility, and customer-centricity, 
+                                we aspire to be a global leader in providing cutting-edge cycling solutions that inspire people to explore, experience, 
+                                and enjoy the freedom of the ride.
+                            </p>
+                        </div>
+                      </div>
+                  </div>
+             </div>
+            </div>
             <section id="carouselSection">
-                <div class="carousel-container">
-                    <div class="carousel-slide">
-                      <img src="img/slide1.png" alt="Image 1">
-                      <img src="img/slide2.png" alt="Image 2">
-                      <img src="img/slide3.jpg" alt="Image 3">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                  
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="img/slide1.png" alt="Los Angeles">
+                      </div>
+                  
+                      <div class="item">
+                        <img src="img/slide2.png" alt="Chicago">
+                      </div>
+                  
+                      <div class="item">
+                        <img src="img/slide3.jpg" alt="New York">
+                      </div>
                     </div>
-                    <a class="carousel-prev">&#10094;</a>
-                    <a class="carousel-next">&#10095;</a>
+                  
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
                   </div>
               </section>
         <section id="contact">
-            <div class="container">
+            <div class="container" id="contactus">
                 <div class="sectionHead">Contact Us</div>
                 <hr>
                 <br>
@@ -275,7 +458,7 @@
                                         <textarea type="text" class="form-control" required placeholder="Message*"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <button class="btn btn-info" type="submit">Send</button>
+                                        <button class="btn btn-info" type="submit" onclick="openModal()">Send</button>
                                     </div>
                                 </form>
                             </div>
@@ -283,39 +466,30 @@
                     </div>
                     <div class="col-md-3">
                         <h4 class="sectionSubSubHead">Mail Us</h4>
-                        <div class="mail-container">
-                            <div class="first">
-                                <img src="img/james.jpg">
-                                <img src="img/email.png">
-                            </div> 
-                            <div class="second">
-                                <img src="img/sayan.jpg">
-                                <img src="img/email.png">
-                            </div>
-                            </div>
-                        </div>
+                        <ul class="list-unstyled">
+                            <li>Macbike Pvt. Ltd.</li>
+                            <li>Saltlake, Kolkata</li>
+                            <li>Oriental, Philippines</li>
+                            <li>Pin: 90010</li>
+                            <li>Phone: 09673951604</li>
+                            <li>Email: macbikecmapny@gmail.com</li>
+                        </ul>
                     </div>
-                </div>
-            </div>
+                    </div>
+               <!-- Modal -->
+<div id="myModal" class="custom-modal">
+    <div class="custom-modal-content">
+      <h2>Message Sent</h2>
+      <h6>Your message has been successfully sent.</h6>
+    </div>
+  </div>
         </section>
-        <section id="about">
-            <div class="container">
-                <div class="sectionHead">About Us</div>
-                <hr>
-                <br>
-                <p>
-                    We are delighted to have you visit MacBike. Our main goal is to encourage more people to ride bicycles because they're practical, eco-friendly, exciting to ride, and full of adventure. These are all the stuff we adore, from full-suspension bikes to durable city commuters to carbon road bicycles. We receive so many messages asking what our shop is about on a daily basis that we feel an introduction is necessary. We are a MacBike with a focus on excellent customer service and all of your biking needs. Simply said, we try our hardest to make sure that our shop is a welcoming space for everyone, especially those who are new to riding.
-                    We sell bikes that we would ride ourselves at MacBike Shop If it's not good enough for us, it probably isn't good enough for you either. We promise to provide you the best value for your money and to offer you the highest-quality accessories and parts made specifically for your riding style. Our business specializes in custom-built hand-built wheels, custom-built bikes, modified bikes, retrofitted bikes, and many other services. Visit our store to learn more!
-                </p>
-            </div>
     </main>
     <footer class="footer">
-        <div class="container">
-            Copyright © 20-23
-            <span style="color:black;">
-                Macalaguing&Sayan
-            </span>
-        </div>
+        <h8 id="foot">Copyright © 20-23
+        <span style="color:rgb(255, 255, 255);">
+            Macalaguing&Sayan
+        </span></h8>
     </footer>
     <script src="script.js"></script>
 </body>

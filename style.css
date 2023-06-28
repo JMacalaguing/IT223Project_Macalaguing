@@ -14,10 +14,12 @@ body {
 }
 
 .navbar {
-    background-color: #6a6c6e;
     padding: 0;
+    margin-bottom: 0px;
 }
-
+.bg-dark {
+    background-color: #111827 !important;
+}
 .navbar>.container {
     margin-right: 200px;
     padding: 0px;
@@ -28,7 +30,7 @@ a.nav-link {
 }
 
 .navbar a {
-    color: #e6e6e6;
+    color: #ffffff !important;
     padding: 5px 70px;
     font-size: 12px;
     margin-right: 30px;
@@ -42,22 +44,24 @@ li {
     color: rgb(245, 93, 6);
     transition: 0.2s;
 }
-
+.fixed-top{
+    position: fixed !important;
+}
 .collapse {
     margin-right: -250px;
 }
-
+.navbar-dark .navbar-brand {
+    padding: 0px 100px 0px 100px;
+}
 #logo {
     width: 48px;
     height: 30px;
-    transform: skew(55deg);
-    margin-bottom: 5px;
+    margin: 8px 5px 10px 0px;
 }
 
 .navbar-brand {
     padding: 0px 50px;
     background-color: rgb(247, 127, 14);
-    transform: skew(-55deg);
 }
 
 .wellcome {
@@ -70,6 +74,7 @@ li {
     background-attachment: fixed;
     background-size: cover;
     z-index: 1;
+	background-position-x: center;
 }
 
 .wellcomeMsg {
@@ -101,7 +106,7 @@ li {
 
 section {
     display: block;
-    padding: 40px 0;
+    padding: 0px ;
     width: 100%;
 }
 
@@ -129,7 +134,7 @@ section:nth-child(odd) {
     text-align: center;
     transition: all 0.2s ease-out;
     padding: 24px 4px;
-    background-color: #0078af;
+    background-color: #111827;
     color: #fff;
     box-shadow: 9px 9px 16px 0px rgba(0, 0, 0, 0.25);
 }
@@ -149,7 +154,7 @@ section:nth-child(odd) {
 
 .box>.icon {
     font-size: 40px;
-    border: 2px solid #fff;
+    
     padding: 25px;
     border-radius: 50%;
     width: 45%;
@@ -191,12 +196,13 @@ section:nth-child(odd) {
     background-size: cover;
     z-index: 1;
     display: block;
-    height: 40vh;
+    height: 50vh;
     width: 100vw;
 }
 
 #parallex-set-3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./img/bike3.jpg');
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .item-box {
@@ -272,6 +278,7 @@ section:nth-child(odd) {
 
 .card-img-top {
     max-height: 190px;
+	object-fit: cover;
 }
 
 .card {
@@ -288,10 +295,6 @@ section:nth-child(odd) {
 .mail-container {
     display: flex;
     flex-direction: column;
-}
-
-.sectionSubSubHead {
-    text-align: center;
 }
 
 .mail-container img {
@@ -320,77 +323,364 @@ section:nth-child(odd) {
     margin-top: 10px;
 }
 
-.container {
-    padding: 0;
+p{
+    text-align: justify;
 }
-
 footer {
     position: absolute;
-    left: 0;
     width: 100%;
     height: 100px;
     line-height: 100px;
-    background-color: #6a6c6e;
-    z-index: 100;
+    background-color: #111010;
+    text-align: center;
+   
+}
+#secondModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+  .modal-content {
+    background-color: #c94f4f;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+    color: #fff;
+  }
+.borders{
+    background-color: #111827;
+    padding: 20px;
+    transform: skew(-55deg);
+    margin: 96px -70px -2px 96px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+#pcenter{
+    text-align: center;
+    
+}
+
+.foot{
     text-align: center;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+#aboutmore{
+    text-align: center;
+}
+
+.button-40 {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  padding: 3rem 3rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 200px;
+  margin-top: 15px;
+}
+
+.button-40:hover {
+  background-color: #374151;
+}
+
+.button-40:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-40 {
+    padding: .75rem 1.5rem;
+  }
+}
+
+.card-img-top {
+
+    max-height: 243px;
+}
+
+.content1 {
+    margin-top: 20px;
+    overflow: hidden;
+    background-color: #111827;
+    color: #fefefe;
+    padding: 0px 80px 0px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: max-height 0.2s ease-out;
+    max-height: 0;
+  }
+  /* Create two equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
   }
   
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
-  .carousel-container {
-    position: relative;
+.container1 {
+    padding: 25px;
+    margin-bottom: 30px;
     width: 100%;
-    overflow: hidden;
+    max-width: 800px;
+    margin: auto;
+	line-height: 2em;
+}
+#features{
+    padding-bottom: 160px;
+}
+.row1{
+    margin-bottom: 30px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 20px; /* Adjust the height as desired */
+    object-fit: cover;
   }
-  
-  .carousel-slide {
-    display: flex;
-    width: 300%; 
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .carousel-slide img {
-    width: 33.3%;
-  }
-  .carousel-prev,
-  .carousel-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 0.5rem;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  .carousel-prev {
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    padding: 35px 0px 35px;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    height: 670px;
+}
+#contactus{
+    margin-bottom: 50px;
+}
+
+.navbar{
+ width: 100%;
+}
+.navbar .container{
+    width: 100%;
+    margin-left: 0;
+    min-width: 100%;
+    max-width: 100%;
+
+}
+.navbar {
+   
+   border: 0;
+}
+
+.navbar-nav{
+	float: right;
+}
+
+.navbar>.container .navbar-brand{
+	margin-left: 50px;
+	padding: 0 50px;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+ .navbar>.container .navbar-brand{
+
+}
+
+.navbar .container {
+    display: inline-block;
+}
+
+.navbar-toggler{
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px;
+
+}
+
+.container>.navbar-collapse{
+    display: block;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 25px !important;
+}
+
+.navbar-nav {
+	float: unset;
+    margin: 0;
+}
+.navbar-collapse.collapse{
+	display: none;
+}
+
+.navbar-collapse.collapse.in{
+	display: block;
+}
+.column1,
+.column2 {
+    float: unset;
+    width: 100%;
+    height: 100%;
+    
+}
+.content1{
+    max-height: 100% !important;
+    padding: 25px;
+}
+.form {
+    float: unset;
+}
+}
+.form {
+    color: #e6e6e6;
+    opacity: 51%;
+    
+}
+.navbar>.container .navbar-brand {
+     margin-left: 0px !important; 
+     padding: 0 50px !important; 
+}
+.navbar-expand-md .navbar-nav {
+    padding-right: 30px;
+}
+
+#log{
+    margin-left: 30px;
+    float: right;
+}
+.navbar-expand-md .navbar-nav {
+    padding-right: 0px !important;
+}
+
+/* The Modal (background) */
+.modal3 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 48px; /* Location of the box */
     left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  .carousel-next {
-    right: 0;
+  /* Modal Content */
+ .modal-content3 {
+        background-color: #fefefe;
+        margin: 58px auto;
+        padding: 20px 203px;
+        border: 1px solid #888;
+        width: 58%;
+        border-radius: 10px;
+    }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+   /* Form Styles */
+form2{
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"]{
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  button[type="submit"] {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    background-color: #111827;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+.modal-content2 {
+    background-color: #212529;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    padding-bottom: 10px;
+}
+#modal2 {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Background shadow color */
+  }
+
+  .custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .custom-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
   }

@@ -1,53 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Service Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="service.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="section">
-        <div class="title">
-            <h1>Our services</h1>
+  <div class="header">
+    <div class="left">
+      <a class="go-back" href="index.html">Go Back</a>
+    </div>
+    <div class="textie">
+      <span class="serv-text">Our services</span>
+    </div>
+  </div>
+  <div class="services">
+      <div class="card"data-toggle="modal" data-target="#myModal3">
+          <div class="icon">
+              <i class="fa-spin fa-lg fa fa-wrench "></i>
+          </div>
+          <h2>MINI TUNE-UP</h2>
+          <h3>STARTS FOR 250$</h3>
+          <p>cleaning, tire pressure checking, headset, bottom bracket, gear, shifter cables, wheel adjustments, lubrication, and basic safety checks. A basic tune-up is ideal for road bikes used by seasonal riders.</p>
+      </div>
+          <!-- First Modal -->
+<div class="modal fade" id="myModal3" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>MINI TUNE-UP</h2>
+      </div>
+      <div class="modal-body">
+        <form id="myForm">
+          <div class="form-group">
+            <h5>Name</h5>
+            <input type="text" class="form-control" id="nameInput">
+          </div>
+          <div class="form-group">
+            <h5>Phone</h5>
+            <input type="tel" class="form-control" id="phoneInput">
+          </div>
+          <div class="form-group">
+            <h5>Address</h5>
+            <input type="text" class="form-control" id="addressInput">
+          </div>
+          <div class="form-group">
+            <h5>Schedule</h5>
+            <input type="date" class="form-control" id="scheduleInput">
+          </div>
+        </form>
         </div>
-        <button class="home">
-        <a href="index.html" class="Home" style="text-decoration: none; color: black;">Home</a>
-        </button>
-        <div class="services">
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-spin fa-lg fa fa-wrench "></i>
-                </div>
-                <h2>MINI TUNE-UP</h2>
-                <h3>STARTS FOR 250$</h3>
-                <p>cleaning, tire pressure checking, headset, bottom bracket, gear, shifter cables, wheel adjustments, lubrication, and basic safety checks. A basic tune-up is ideal for road bikes used by seasonal riders.</p>
-                <a href="READMORE.HTML" class="button">READMORE!</a>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-spin fa-lg fa fa-bicycle"></i>
-                </div>
-                <h2>BIKE OVERHAUL</h2>
-                <h3>STARTS FOR 300$</h3>
-                <p>a comprehensive service during which the complete bike is disassembled, bearings cleaned or replaced, drivetrain cleaned and cables and housing replaced.</p>
-                <a href="READMORE1.html" class="button">READMORE!</a>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-spin fa-lg fa fa-warehouse"></i>
-            </div>
-            <h2>BIKE WAREHOUSE</h2>
-            <h3>STARTS FOR 1000$+</h3>
-            <p>The Warehouse is the hub of Bike Works Recycle & Reuse efforts. We process nearly 7,000 bikes every year that are donated to us by individuals, from community bike drives, and through our partnership with Recology Cleanscapes.</p>
-            <a href="READMORE2.html" class="button">READMORE!</a>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="submitBtn3">Submit</button>
         </div>
-    </div>       
-  <footer>
-    <p>&copy; 2023 MacBike. All rights reserved.</p>
-  </footer>
+      </div>
+    </div>
+  </div>
+<!-- Second Modal -->
+  <div id="secondModal3" class="modal">
+    <div class="modal-content">
+     <span class="close">&times;</span>
+      <h2>Thank you</h2>
+     <p>Your form has been successfully submitted.</p>
+  </div>
+  </div>
+      <div class="card" data-toggle="modal" data-target="#myModal" >
+          <div class="icon">
+              <i class="fa-spin fa-lg fa fa-bicycle"></i>
+          </div>
+          <h2>BIKE OVERHAUL</h2>
+          <h3>STARTS FOR 300$</h3>
+          <p>a comprehensive service during which the complete bike is disassembled, bearings cleaned or replaced, drivetrain cleaned and cables and housing replaced.</p>
+      </div>
+      <!-- First Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>BIKE WAREHOUSE</h2>
+      </div>
+      <div class="modal-body">
+        <form id="myForm">
+          <div class="form-group">
+            <h5>Name</h5>
+            <input type="text" class="form-control" id="nameInput">
+          </div>
+          <div class="form-group">
+            <h5>Phone</h5>
+            <input type="tel" class="form-control" id="phoneInput">
+          </div>
+          <div class="form-group">
+            <h5>Address</h5>
+            <input type="text" class="form-control" id="addressInput">
+          </div>
+          <div class="form-group">
+            <h5>Schedule</h5>
+            <input type="date" class="form-control" id="scheduleInput">
+          </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="submitBtn">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Second Modal -->
+  <div id="secondModal" class="modal">
+    <div class="modal-content">
+     <span class="close">&times;</span>
+      <h2>Thank you</h2>
+     <p>Your form has been successfully submitted.</p>
+  </div>
+  </div>
+      <div class="card"data-toggle="modal" data-target="#myModal2">
+          <div class="icon">
+              <i class="fa-spin fa-lg fa fa-warehouse"></i>
+          </div>
+      <h2>BIKE WAREHOUSE</h2>
+      <h3>STARTS FOR 1000$+</h3>
+      <p>The Warehouse is the hub of Bike Works Recycle & Reuse efforts. We process nearly 7,000 bikes every year that are donated to us by individuals, from community bike drives, and through our partnership with Recology Cleanscapes.</p>
+      </div>
+    <!-- First Modal -->
+<div class="modal fade" id="myModal2" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>BIKE WAREHOUSE</h2>
+      </div>
+      <div class="modal-body">
+        <form id="myForm">
+          <div class="form-group">
+            <h5>Name</h5>
+            <input type="text" class="form-control" id="nameInput">
+          </div>
+          <div class="form-group">
+            <h5>Phone</h5>
+            <input type="tel" class="form-control" id="phoneInput">
+          </div>
+          <div class="form-group">
+            <h5>Address</h5>
+            <input type="text" class="form-control" id="addressInput">
+          </div>
+          <div class="form-group">
+            <h5>Schedule</h5>
+            <input type="date" class="form-control" id="scheduleInput">
+          </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="submitBtn2">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Second Modal -->
+  <div id="secondModal2" class="modal">
+    <div class="modal-content">
+     <span class="close">&times;</span>
+      <h2>Thank you</h2>
+     <p>Your form has been successfully submitted.</p>
+  </div>
+  </div>
+</div> 
+<script src="script2.js"></script>
 </body>
-
 </html>

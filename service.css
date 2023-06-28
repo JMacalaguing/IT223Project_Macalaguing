@@ -1,110 +1,201 @@
 *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+
 }
 body{
-    width: 100%;
-    background-color: white;
-    
+  width: 100%;
+  background-color: white;
+  
+}
+.serv-text{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 50px;
+  display: inline-block;
+
+}
+.header{
+  background-color: #111827;
+  padding: 20px;
+  
+  color: #ffffff;
+  
+
+}
+.textie{
+  color: white;
+
+}
+.arrow{
+  color: black;
+  float: left;
+}
+.left{
+  float: left;
+  padding-left: 30px;
 }
 .home:hover{
-    transition: 0.4s ease;
-    color: #fff;
-    font-size: 15px;
+  transition: 0.4s ease;
+  color: #fff;
+  font-size: 15px;
 }
 .title h1{
-    text-align: center;
-    padding-top: 50px;
-    font-size: 42px;
-    border: 1px solid black;
-    background-color: grey;
-    padding: 30px;
-    border: none;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 42px;
+  border: 1px solid black;
+  background-color: grey;
+  padding: 30px;
+  border: none;
 }
 .title h1::after{
-    
-    height: 4px;
-    width:230px;
-    background-color: #000;
-    display: block;
-    margin: auto;
+  text-align: center;
+  height: 4px;
+  width:230px;
+  background-color: #000;
+  display: block;
+  margin: auto;
 }
 .services{
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 75px auto;
-    text-align: center;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 75px auto;
+  text-align: center;
 }
 .card{
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    margin: 0px 20px;
-    padding: 20px 20px;
-    background-color: #efefef;
-    border-radius: 10px;
-    cursor: pointer;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px 20px;
+  padding: 20px 20px;
+  background-color: #efefef;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 .card:hover{
-    background-color: #b8d4de;
-    transition: 0.4s;
-    color: rgb(241, 41, 14);
+  background-color: #b8d4de;
+  transition: 0.4s;
+  color: rgb(241, 41, 14);
 }
 .card .icon{
-    transition: 0.2s;
-    font-size: 35px;
-    margin-bottom: 10px;
-    
-    
+  transition: 0.2s;
+  font-size: 35px;
+  margin-bottom: 10px; 
 }
 .card h2{
-    font-size: 28px;
-    color: #c94f4f;
-    margin-bottom: 20px;
+  font-size: 28px;
+  color: #c94f4f;
+  margin-bottom: 20px;
 }
 .card p{
-    font-size: 17px;
-    margin-bottom: 30px;
-    line-height: 1.5;
-    color: #5e5e5e;
+  font-size: 17px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #5e5e5e;
 }
 .button{
-    font-size: 15px;
-    text-decoration: none;
-    color: #fff;
-    background-color: red;
-    padding: 8x 12px;
-    border-radius: 5px;
-    letter-spacing: 1px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  background-color: red;
+  padding: 8x 12px;
+  border-radius: 5px;
+  letter-spacing: 1px;
 }
 .button:hover{
-    background-color: #c94f4f;
-    transition: 0.4 ease;
+  background-color: #c94f4f;
+  transition: 0.4 ease;
 }
 footer{
-    height: 30px;
-    padding: 5px;
-    text-align: center;
-    border: 0px solid black;
-    background-color: red;
-    
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+  border: 0px solid black;
+  background-color:#343a40;
+  color:#fff;  
+}
+
+h5{
+  float: left;
+}
+.btn-default{
+  color:#ffffff;
+  background-color: #c94f4f;
+}
+.btn-default:hover {
+  color: #c94f4f;
+  background-color: rgb(255, 255, 255);
+}
+.modal-body{
+  position: relative;
+  padding: 72px;
+}
+.modal-header{
+  background-color: #c94f4f;
+  color:white;
+}
+.close{
+  color:rgb(255, 255, 255);
+  opacity:10;
+}
+.go-back {
+  color: #c16b00;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  padding-left: 15px;
+  position: relative; 
+}
+.go-back::before,
+.go-back::after {
+  content: "";
+  display: block;
+  left: 0px;
+  position: absolute;
+  top: 50%;
+  transition: left 0.1s;
+}
+.go-back::before {
+  border-color: #c16b00;
+  border-style: solid;
+  border-width: 0 0 2px 2px;
+  height: 6px;
+  margin-top: -3px;
+  width: 6px;
+
+  transform: rotate( 45deg );
+  -webkit-transform: rotate( 45deg );
+}
+.go-back::after {
+  background: #c16b00;
+  height: 2px;
+  width: 11px;
+}
+.go-back:hover::before,
+.go-back:hover::after {
+  left: -3px;
+
 }
 @media screen and (max-width: 800px){
-    .services{
-        display:flex;
-        flex-direction: column;
-    }
-    .card{
-        width: 85%;
-        display: flex;
-        margin: 20px 0px;
-    }
+  .services{
+      display:flex;
+      flex-direction: column;
+  }
+  .card{
+      width: 85%;
+      display: flex;
+      margin: 20px 0px;
+  }
 }
